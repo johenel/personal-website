@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
+
+@font-face {
+    font-family: "Consolas";
+    src: url(../fonts/CONSOLA.ttf) format("truetype");
+}
+
+body {
+	background: #fbfbfb;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+header {
+	padding: 20px;
+    background: linear-gradient(45deg, #000000, #100000c7);
+}
+
+footer {
+    background: #333;
+    color: white;
+}
+#main {
+	padding-bottom:60px;
+	height: 100vh;
+}
+
+.header {
+	padding-top: 30px;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color:hsla(50, 100%, 50%, 1);
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.profile-box {
+    border: 1px solid #07404014;
+	margin-top: 70px;
+	text-align: center;
+	background: white;
+    box-shadow: 5px 5px 5px #eeeeee80;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile-box .name {
+    font-size: 1.7rem;
+}
+
+.profile-box .featured-image {
+	padding: 10px;
+    background: rgba(37, 26, 26, 0.86);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile-box .profile-info {
+	padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+	text-align: left;
+	 position: relative;
+}
+
+
+.profile-box .featured-image img{
+	border-radius: 50%;
+	height: 150px;
+	margin-top: -70px;
+
+}
+
+.profile-box .social-icons {
+	padding: 20px;
+	border: 1px dashed #eee;
+	text-align: left;
+}
+
+.profile-box .social-icons i {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.profile-box .country {
+	margin-top: 5px;
+}
+
+.profile-box .country img {
+    width: 35px;
+    border: solid 1px #ddd;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
