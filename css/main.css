@@ -50,7 +50,7 @@ footer {
 
 .profile-box .featured-image {
 	padding: 10px;
-    background: rgba(37, 26, 26, 0.86);
+        background: linear-gradient(-180deg, rgba(0, 0, 0, 0.45), #0000009c 90%), url(../media/header-bg.svg) no-repeat 50%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
