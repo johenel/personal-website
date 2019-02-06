@@ -18,6 +18,15 @@ footer {
     background: #333;
     color: white;
 }
+
+a.nav-link {
+    color: steelblue;
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+}
+
 #main {
 	padding-bottom:60px;
 	height: 100vh;
@@ -103,7 +112,6 @@ footer {
     box-shadow: 5px 5px 5px #eeeeee80;
     margin-top: 30px;
     min-height: 600px;
-    display: none;
 }
 
 .works-box .wb-header {
@@ -146,6 +154,78 @@ footer {
     box-shadow: 1px 1px 1px #ddd;
 }
 
+.summary-info .tags h4 {
+   color: hsla(45, 100%, 50%, 1);
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.self-rate h2, .self-rate h3, .self-rate h4 {
+    color: chocolate;
+    text-shadow: 4px 4px 4px #ddd;
+}
+
+.tab-content {
+	padding: 30px;
+}
+
+.tab-pane#career p { 
+	text-indent: 40px;
+}
+
+.rating-box {
+    border: dashed 1px #ddd;
+    margin-top: 25px;
+}
+
+.rates {
+	padding: 20px;
+}
+.rates .item {
+	margin-bottom: 10px;
+}
+.s-name, .stars {
+	display: inline-block;
+}
+
+.s-name {
+	font-family: 'Consolas';
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.stars {
+	float: right;
+}
+
+.fa.fa-star {
+    color: #ffa50085;
+}
+
+.learning-box {
+	margin-top:20px;
+}
+
+.learning-box span {
+    background: #eee;
+    color: #888;
+    padding: 5px 10px;
+    margin-right: 2px;
+    margin-bottom: 7px;
+    width: max-content;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+.final-remarks {
+	margin-top: 30px;
+}
+
+.final-remarks h2 {
+	font-weight: bold;
+    color: cadetblue;
+	text-shadow: 0px 0px 0px #ddd;
+}
 
 @media(max-width: 425px) {
 	.header {
@@ -153,5 +233,9 @@ footer {
 	}
 	.header h1 {
 	    font-size: 50px;
+	}
+
+	#menu2 img {
+		margin-bottom: 10px;
 	}
 }
