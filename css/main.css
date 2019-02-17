@@ -39,7 +39,7 @@ a.nav-link {
 .header h1 {
     font-weight: bold;
     font-size: 70px;
-    color:hsla(50, 100%, 50%, 1);
+    color:hsl(39, 100%, 62%);
     text-shadow: 1px 1px 1px #ccc;
 }
 
