@@ -5,10 +5,14 @@
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1">
 	<title>Johenel</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="main">
 <div class="container">
@@ -82,11 +86,11 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#career">Career</a>
+							<a class="nav-link active" data-toggle="tab" href="#portfolio">Portfolio</a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#menu1">Projects</a>
-						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#career">Career</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" data-toggle="tab" href="#menu2">About Me</a>
 						</li>
@@ -94,7 +98,61 @@
 
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div class="tab-pane container active" id="career">
+						<div class="tab-pane container active text-left" id="portfolio">
+							<div class="p-item">
+								<h1>Runkitek</h1>
+								<p class="description" style="margin-bottom:0px;">
+									A run/marathon event website built with <b style="color:blue;">Laravel</b>.
+								</p>
+								<a href="http://www.runkitek.com" target="_blank" style="margin-bottom:10px;">www.runkitek.com</a>
+								<div class="screenshots">
+									<div class="slick-container">
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/runkitek-1.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/runkitek-2.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/runkitek-3.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/runkitek-4.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/runkitek-5.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-runkitek/admin.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="p-item">
+								<h1>Online Advertising Agency</h1>
+								<p class="description" style="margin-bottom:0px;">
+									An advertising company website built with <b style="color:blue;">WordPress</b>.
+								</p>
+								<a href="http://www.onlineadvertisingagency.com.ph/" target="_blank" style="margin-bottom:10px;">www.onlineadvertisingagency.com.ph/</a>
+								<div class="screenshots">
+									<div class="slick-container">
+										<div class="slick-item">
+											<img src="media/portfolio-oaa/oaa-1.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-oaa/oaa-2.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-oaa/oaa-3.png">
+										</div>
+										<div class="slick-item">
+											<img src="media/portfolio-oaa/oaa-4.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane container fade" id="career">
 							<p class="text-left">
 								I started my career in August of 2016 with a local company as a jr. web developer (backend). I learned Laravel, Wordpress and API development during the first year with the company. The second year I get to experience mobile development; Swift IOS and React Native for a hybrid mobile development and I know these are not my greatest strengths. March of 2018 I started to work to an international company focusing my expertise on web development using Laravel.
 							</p>
@@ -211,9 +269,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane container fade" id="menu1">
-							...
-						</div>
+
 						<div class="tab-pane container fade" id="menu2">
 							<div class="container">
 								<div class="row" style="margin-bottom: 20px;">
