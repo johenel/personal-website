@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #c84eb9;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: loveisawesome;
+    src: url('../fonts/loveisawesome2.ttf');
+}
+
+@font-face {
+    font-family: peacechild;
+    src: url('../fonts/peacechild.ttf');
+}
+
+@font-face {
+    font-family: circleoflove;
+    src: url('../fonts/circle_of_love.ttf');
+}
+
+@font-face {
+    font-family: kglove;
+    src: url('../fonts/KGLoveYouThroughIt3.ttf');
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+h1.anniv-head {
+    font-family: circleoflove;
+    font-size: 70px;
+    color: darkred;
+    letter-spacing: 12px;
+    line-height: 1em;
+}
+
+
+.area{
+    background: #c84eb9;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    min-height:calc(100vh + 20px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.circles li{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    float: left;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    opacity: .3;
+}
+
+.circles li:before,
+.circles li:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.circles li:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin :100% 100%;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: .75;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* CONTENT CSS */
+
+.standard {
+    padding: 40px;
+    overflow: hidden;
+}
+
+.standard img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 4px solid #ddd;
+
+}
+
+.main-img img {
+    width: 400px;
+    height: 300px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+}
+
+.message-pane {
+    background-color: #fff;
+    padding: 20px 30px;
+    border: solid 1px #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-indent: 40px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.section {
+    background: lavender;
+}
