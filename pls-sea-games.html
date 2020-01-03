@@ -12,14 +12,52 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body id="main">
-    <div class="container" style="min-height: 100vh; background-color: #fbfbfb;">
-        <h1>Test</h1>
+    <div id="main-container" class="container" style="min-height: 100vh; background-color: #fbfbfb;">
+        <header>
+            <h1>Chess Scores</h1>
+        </header>
+        <div v-for="item in this.match_ups" class="row vs-card">
+            <div class="col-md-4">
+                <div >
+                    <h3>{{players[item.player_1.id]}}</h3>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h1>VS</h1>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
     </div>
     <script>
-
+        new Vue({
+            data: {
+                'players': [
+                    'Paul', 'Jojie', 'King', 'Rey', 'Kiko'
+                ],
+                'match_ups': {
+                    'vs1': {
+                        'player_1': {
+                            'id': 0,
+                            'score': 2
+                        },
+                        'player_2':  {
+                            'id': 1,
+                            'score': 14
+                        }
+                    }
+                }
+            },
+            mounted() {
+                console.log(this.match_ups.vs1.player_1)
+            }
+        }).$mount('#main-container');
     </script>
 </body>
 </html>
